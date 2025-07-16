@@ -385,7 +385,7 @@
 
             .training-table td {
                 border: none !important;
-                padding: 8px 0;
+                padding: 12px 0;
                 text-align: left;
                 width: 100%;
             }
@@ -394,9 +394,13 @@
                 content: attr(data-label) ": ";
                 font-weight: 600;
                 color: #1d1d1f;
-                display: inline-block;
-                margin-bottom: 4px;
+                display: block;
+                margin-bottom: 8px;
                 font-size: 15px;
+                background: linear-gradient(135deg, #ff6b35 0%, #ff8c00 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
             }
 
             .training-table td:first-child:before {
@@ -513,6 +517,12 @@
 
                 .training-table td:before {
                     color: #f5f5f7;
+                    background: linear-gradient(135deg, #ff6b35 0%, #ff8c00 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    display: block;
+                    margin-bottom: 8px;
                 }
 
                 .training-table td:first-child {
