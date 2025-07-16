@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跑步腿部力量训练要点</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #1d1d1f;
+            font-size: 17px;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1d1d1f;
+            margin: 0;
+            padding: 60px 40px 40px;
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.003em;
+            border: none;
+        }
+
+        .intro {
+            background-color: #f5f5f7;
+            padding: 40px;
+            margin: 0;
+            border: none;
+        }
+
+        .intro h2 {
+            color: #1d1d1f;
+            margin: 0 0 24px 0;
+            font-size: 32px;
+            font-weight: 600;
+            letter-spacing: -0.002em;
+        }
+
+        .intro p {
+            font-size: 19px;
+            line-height: 1.4;
+            color: #515154;
+            margin-bottom: 20px;
+        }
+
+        .intro ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .intro li {
+            font-size: 17px;
+            line-height: 1.4;
+            color: #515154;
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .intro li::before {
+            content: '•';
+            color: #007aff;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .training-section {
+            margin: 0;
+            padding: 60px 40px;
+            border-bottom: 1px solid #f5f5f7;
+        }
+
+        .training-section:last-of-type {
+            border-bottom: none;
+        }
+
+        .section-title {
+            background: none;
+            color: #1d1d1f;
+            padding: 0;
+            margin: 0 0 40px 0;
+            font-size: 32px;
+            font-weight: 600;
+            letter-spacing: -0.002em;
+            border-radius: 0;
+        }
+
+        .training-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 0;
+            box-shadow: none;
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #e5e5e7;
+        }
+
+        .training-table th {
+            background: #f5f5f7;
+            color: #1d1d1f;
+            padding: 20px;
+            text-align: left;
+            font-weight: 600;
+            border: none;
+            font-size: 17px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        .training-table td {
+            padding: 24px 20px;
+            border: none;
+            vertical-align: top;
+            border-bottom: 1px solid #f5f5f7;
+        }
+
+        .training-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .training-table tr:hover {
+            background-color: #fbfbfb;
+        }
+
+        .exercise-name {
+            font-weight: 600;
+            color: #1d1d1f;
+            font-size: 19px;
+            letter-spacing: -0.001em;
+        }
+
+        .exercise-description {
+            margin-top: 0;
+            color: #515154;
+            line-height: 1.4;
+            font-size: 17px;
+        }
+
+        .training-table td img {
+            width: 180px;
+            height: 135px;
+            border-radius: 12px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            border: 1px solid #e5e5e7;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 0;
+            }
+
+            h1 {
+                font-size: 36px;
+                padding: 40px 20px 30px;
+            }
+
+            .intro {
+                padding: 30px 20px;
+            }
+
+            .intro h2 {
+                font-size: 28px;
+            }
+
+            .training-section {
+                padding: 40px 20px;
+            }
+
+            .section-title {
+                font-size: 28px;
+                margin-bottom: 30px;
+            }
+
+            .training-table th,
+            .training-table td {
+                padding: 16px;
+            }
+
+            .training-table td img {
+                width: 150px;
+                height: 112px;
+            }
+
+            /* 移动端表格优化 */
+            .training-table {
+                border-radius: 8px;
+            }
+
+            .training-table th {
+                font-size: 15px;
+                padding: 12px 8px;
+            }
+
+            .training-table td {
+                padding: 16px 8px;
+            }
+
+            .exercise-name {
+                font-size: 17px;
+            }
+
+            .exercise-description {
+                font-size: 15px;
+                line-height: 1.3;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 28px;
+                padding: 30px 16px 20px;
+            }
+
+            .intro {
+                padding: 24px 16px;
+            }
+
+            .intro h2 {
+                font-size: 24px;
+                margin-bottom: 16px;
+            }
+
+            .intro p {
+                font-size: 17px;
+            }
+
+            .intro li {
+                font-size: 15px;
+                margin-bottom: 6px;
+            }
+
+            .training-section {
+                padding: 32px 16px;
+            }
+
+            .section-title {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            /* 移动端表格堆叠布局 */
+            .training-table,
+            .training-table thead,
+            .training-table tbody,
+            .training-table th,
+            .training-table td,
+            .training-table tr {
+                display: block;
+            }
+
+            .training-table thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            .training-table tr {
+                border: 1px solid #e5e5e7;
+                border-radius: 12px;
+                margin-bottom: 16px;
+                padding: 20px 16px;
+                background-color: #ffffff;
+            }
+
+            .training-table td {
+                border: none !important;
+                padding: 8px 0;
+                text-align: left;
+                width: 100%;
+            }
+
+            .training-table td:before {
+                content: attr(data-label) ": ";
+                font-weight: 600;
+                color: #1d1d1f;
+                display: inline-block;
+                margin-bottom: 4px;
+                font-size: 15px;
+            }
+
+            .training-table td:first-child:before {
+                content: "";
+            }
+
+            .training-table td:first-child {
+                background: none;
+                font-size: 20px;
+                font-weight: 700;
+                color: #1d1d1f;
+                border-bottom: 2px solid #f5f5f7;
+                padding-bottom: 12px;
+                margin-bottom: 12px;
+                text-align: center;
+            }
+
+            .training-table td img {
+                width: 200px;
+                height: 150px;
+                margin: 12px auto;
+            }
+
+            .exercise-description {
+                font-size: 16px;
+                line-height: 1.4;
+                margin-top: 8px;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #000000;
+                color: #f5f5f7;
+            }
+
+            .container {
+                background-color: #000000;
+            }
+
+            h1,
+            .intro h2,
+            .section-title,
+            .exercise-name {
+                color: #f5f5f7;
+            }
+
+            .intro {
+                background-color: #1d1d1f;
+            }
+
+            .intro p,
+            .intro li,
+            .exercise-description {
+                color: #a1a1a6;
+            }
+
+            .training-section {
+                border-bottom-color: #424245;
+            }
+
+            .training-table {
+                background-color: #1d1d1f;
+                border-color: #424245;
+            }
+
+            .training-table th {
+                background-color: #2d2d30;
+                color: #f5f5f7;
+                border-bottom-color: #424245;
+            }
+
+            .training-table td {
+                border-bottom-color: #2d2d30;
+            }
+
+            .training-table tr:hover {
+                background-color: #2d2d30;
+            }
+
+            .training-table td img {
+                border-color: #424245;
+            }
+
+            /* 深色模式下的移动端表格样式 */
+            @media (max-width: 480px) {
+                .training-table tr {
+                    border-color: #424245;
+                    background-color: #1d1d1f;
+                }
+
+                .training-table td:before {
+                    color: #f5f5f7;
+                }
+
+                .training-table td:first-child {
+                    color: #f5f5f7;
+                    border-bottom-color: #424245;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>跑步腿部力量训练要点</h1>
+
+        <div class="intro">
+            <h2>腿部力量训练对跑者的重要性</h2>
+            <p>腿是我们跑步时用到的频率最高的部位，双腿拥有我们身上最大的肌肉群。当跑者拥有良好的下肢力量训练会对于跑步有五大好处：</p>
+            <ul>
+                <li>可以提高肌肉力量和耐力和稳定性</li>
+                <li>能对关节有好的保护作用、能预防伤痛</li>
+                <li>可以提高运动表现、提升成绩</li>
+                <li>从而帮助你保持正确跑姿</li>
+                <li>跑步更轻松、提高身体的代谢率</li>
+            </ul>
+        </div>
+
+        <div class="training-section">
+            <div class="section-title">起步基础力量训练</div>
+            <table class="training-table">
+                <thead>
+                    <tr>
+                        <th style="width: 20%;">动作名称</th>
+                        <th style="width: 25%;">动作演示</th>
+                        <th style="width: 55%;">训练要点</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="exercise-name">半蹲</td>
+                        <td data-label="动作演示">
+                            <img src="1.gif" alt="半蹲" />
+                        </td>
+                        <td class="exercise-description" data-label="训练要点">
+                            • 蹲至大小腿约成90度，注意膝盖不要过度超过脚尖<br>
+                            • 挺胸收腹，感觉腿部和臀部用力
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="exercise-name">深蹲</td>
+                        <td data-label="动作演示">
+                            <img src="2.gif" alt="深蹲" />
+                        </td>
+                        <td class="exercise-description" data-label="训练要点">
+                            • 相比半蹲，难度加大，蹲至大腿与地面平行<br>
+                            • 要求与半蹲基本相同
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="exercise-name">原地弓箭步</td>
+                        <td data-label="动作演示">
+                            <img src="3.gif" alt="原地弓箭步" />
+                        </td>
+                        <td class="exercise-description" data-label="训练要点">
+                            • 注意重心向下，膝盖不要过度超过脚尖<br>
+                            • 该动作与下蹲一样，是下肢经典训练动作
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="exercise-name">宽距下蹲</td>
+                        <td data-label="动作演示">
+                            <img src="4.gif" alt="宽距下蹲" />
+                        </td>
+                        <td class="exercise-description" data-label="训练要点">
+                            • 双脚距离较大，脚尖朝外，该动作可刺激到股内侧肌<br>
+                            • 可以起到平衡股外侧肌的作用，对于纠正髌骨运动轨迹异常<br>
+                            • 减少膝痛有一定帮助
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="exercise-name">仰卧挺髋</td>
+                        <td data-label="动作演示">
+                            <img src="5.gif" alt="仰卧挺髋" />
+                        </td>
+                        <td class="exercise-description" data-label="训练要点">
+                            • 该动作是可以有效增强臀肌和大腿后群肌肉力量<br>
+                            • 这两个部位是跑步发力非常重要的原动肌
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="exercise-name">蹲跳</td>
+                        <td data-label="动作演示">
+                            <img src="6.gif" alt="蹲跳" />
+                        </td>
+                        <td class="exercise-description" data-label="训练要点">
+                            • 该动作是提高下肢爆发力的经典训练动作
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="training-section">
+            <div class="section-title">进阶准专项力量训练</div>
+            <table class="training-table">
+                <thead>
+                    <tr>
+                        <th style="width: 20%;">动作名称</th>
+                        <th style="width: 25%;">动作演示</th>
+                        <th style="width: 55%;">训练要点</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="exercise-name">弓箭步</td>
+                        <td data-label="动作演示">
+                            <img src="21.gif" alt="弓箭步" />
+                        </td>
+                        <td class="exercise-description" data-label="训练要点">
+                            • 左右腿交替向前迈出，除了锻炼下肢力量<br>
+                            • 同时对于平衡稳定也有一定要求<br>
+                            • 相比原地弓箭步难度增加<br>
+                            • 也更加结合跑步
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="exercise-name">单腿上台阶</td>
+                        <td data-label="动作演示">
+                            <img src="22.gif" alt="单腿上台阶" />
+                        </td>
+                        <td class="exercise-description" data-label="训练要点">
+                            • 该动作可以有效提高下肢蹬伸力量及上摆腿力量
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="exercise-name">保加尼亚剪蹲</td>
+                        <td data-label="动作演示">
+                            <img src="23.gif" alt="保加尼亚剪蹲" />
+                        </td>
+                        <td class="exercise-description" data-label="训练要点">
+                            • 将后腿放在台阶上，前腿做下蹲<br>
+                            • 对于稳定、力量均有一定要求
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="exercise-name">单腿硬拉</td>
+                        <td data-label="动作演示">
+                            <img src="24.gif" alt="单腿硬拉" />
+                        </td>
+                        <td class="exercise-description" data-label="训练要点">
+                            • 该动作主要训练臀部肌肉和大腿后群肌肉协调发力能力<br>
+                            • 在跑步过程中，后腿蹬地发力是推动身体前进最主要的动力<br>
+                            • 后腿蹬地实际上是臀肌发力伸髋和大腿后群肌肉发力折叠小腿的协同用力过程<br>
+                            • 这个动作就是训练臀肌和大腿后群肌肉协调用力能力
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="exercise-name">单腿仰卧挺髋</td>
+                        <td data-label="动作演示">
+                            <img src="25.gif" alt="单腿仰卧挺髋" />
+                        </td>
+                        <td class="exercise-description" data-label="训练要点">
+                            • 相比基础力量训练中的仰卧挺髋，单腿增加了难度<br>
+                            • 强化了核心控制，同时也符合跑步单腿蹬伸的技术特点
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="exercise-name">弓箭步跳</td>
+                        <td data-label="动作演示">
+                            <img src="26.gif" alt="弓箭步跳" />
+                        </td>
+                        <td class="exercise-description" data-label="训练要点">
+                            • 相比蹲跳，弓箭步跳是腿的运动方向与跑步更接近<br>
+                            • 是比蹲跳更专项的爆发力训练动作
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="training-section">
+            <div class="section-title">高级专项力量训练</div>
+            <table class="training-table">
+                <thead>
+                    <tr>
+                        <th style="width: 20%;">动作名称</th>
+                        <th style="width: 25%;">动作演示</th>
+                        <th style="width: 55%;">训练要点</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="exercise-name">弓箭步接抬腿</td>
+                        <td data-label="动作演示">
+                            <img src="31.gif" alt="弓箭步接抬腿" />
+                        </td>
+                        <td class="exercise-description" data-label="训练要点">
+                            • 非常典型的蹬伸接摆腿，与跑步动作一致
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="exercise-name">单腿上台阶接高抬腿</td>
+                        <td data-label="动作演示">
+                            <img src="32.gif" alt="单腿上台阶接高抬腿" />
+                        </td>
+                        <td class="exercise-description" data-label="训练要点">
+                            • 同样需要一侧腿用力蹬伸上台阶<br>
+                            • 另一侧腿积极上摆，与跑步动作高度一致
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="exercise-name">俯卧高抬腿</td>
+                        <td data-label="动作演示">
+                            <img src="33.gif" alt="俯卧高抬腿" />
+                        </td>
+                        <td class="exercise-description" data-label="训练要点">
+                            • 该动作主要训练抬腿能力，同时也强化了核心控制
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="exercise-name">侧桥摆臂摆腿</td>
+                        <td data-label="动作演示">
+                            <img src="34.gif" alt="侧桥摆臂摆腿" />
+                        </td>
+                        <td class="exercise-description" data-label="训练要点">
+                            • 该动作在侧桥位摆臂摆腿，动作模仿跑步<br>
+                            • 同时要求骨盆控制良好，是一项看似简单<br>
+                            • 实则较难控制的全身性训练动作
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="exercise-name">单腿硬拉接提膝</td>
+                        <td data-label="动作演示">
+                            <img src="35.gif" alt="单腿硬拉接提膝" />
+                        </td>
+                        <td class="exercise-description" data-label="训练要点">
+                            • 相比单腿硬拉，加上提膝动作就更加结合跑步专项
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="exercise-name">弓箭步向前跳起</td>
+                        <td data-label="动作演示">
+                            <img src="36.gif" alt="弓箭步向前跳起" />
+                        </td>
+                        <td class="exercise-description" data-label="训练要点">
+                            • 训练支撑腿蹬伸和摆动腿上摆的爆发力<br>
+                            • 也是结合跑步的专项力量训练动作
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
